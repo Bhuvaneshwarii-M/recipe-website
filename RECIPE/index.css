@@ -1,0 +1,179 @@
+div>span{
+    display: block;
+    font-size: larger;
+    text-align: center;
+    padding: 40px;
+    color:black;
+    margin-left: 20px;
+    margin-right: 60px;  
+    align-items: center;  
+}
+header {
+    font-size: xx-large;
+    color: black;
+    font-weight: bold;
+    background-image: url(logo.jpg);
+    background-color: rgba(255, 255, 255, .6);
+    background-repeat: no-repeat;
+}
+html {
+    background-image: url(bg_img.jpg) ;
+    background-color:#c0caca; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 600px;
+}
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+textarea {
+    height: 75px;
+}
+a[href="verification_page.html"]{
+    display: block;
+    color:blue;
+    text-align: center;
+    font-size: x-large;
+}
+.check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 500px;
+    padding:20px 20px ;
+}
+button[onclick="addcheck()"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 500px;
+}
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    text-align: center;
+}
+button[onclick="addcheck()"]:hover {
+    background-color: #0062cc;
+}
+button[onclick="disalert()"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 600px;
+}
+button[onclick="disalert()"]:hover {
+    background-color: #0062cc;
+}
+button:hover {
+    background-color: black;
+    color: white;
+}
+#d1 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+input[placeholder="Enter the sum of above two numbers"] {
+    text-align: center;
+}
+.g1 {
+    display: grid;
+    grid-template-columns:auto auto auto auto auto auto auto auto;
+    gap: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow-x: scroll;
+}
+.g2 {
+    display: grid;
+    grid-template-columns:auto auto auto auto auto auto auto auto;
+    gap: 40px;
+    margin-left: 150px;
+    margin-right: 10px;
+}
+.g0{
+    display: block;
+    font-size: larger;
+    text-align: center;
+    padding: 40px;
+    color:black;
+    margin-left: 60px;
+    margin-right: 60px;  
+    align-items: center;  
+}
+.menu-list {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 90px;
+}
+.menu-list li {
+    margin-bottom: 10px;
+}
+.menu-list li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+ul {
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, .7);
+}
+img {
+    padding: 10px;
+}
+.all {
+    margin-left: 80px;
+}
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+footer p {
+    margin: 0;
+}

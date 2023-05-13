@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verification | Creative</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        var a= Math.floor((Math.random()*999)+1);
+        var b= Math.floor((Math.random()*999)+1);
+        var result=a+b;
+        window.onload = function(){
+            document.getElementById("d1").innerHTML = a + " + " + b;
+        }
+        function addcheck(){
+            var sum= document.getElementById("getvalue").value;
+            if (sum==result){
+                window.open("feedback_page.html");
+                history.back();
+            }
+            else {
+                alert("Incorrect Captcha Value");
+                location.reload();
+            }
+        }
+    </script>
+</head>
+<header>
+    <br>
+    <center><font face="Comic sans MS" color="black" >Creative - A place for different recipes</font></center>
+    <p align="center"><font size="5" face="Comic sans MS" color="black"><b>"A recipe has no soul. YOU as the cook must bring SOUL to the recipe."</b></font></p><br>
+</header>
+<body>
+    <div class="check">
+    <p id="d1"></p><br>
+    <input type="number" id="getvalue" placeholder="Enter the sum of above two numbers"><br>
+    <button onclick="addcheck()">Proceed</button>
+    <br><br><br><br><br>
+    </div>
+</body>
+<footer>
+    <p>&copy; 2023 Creative. All rights reserved.</p>
+</footer>
+</html>

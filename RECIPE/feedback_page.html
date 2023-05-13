@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Form | Creative</title>
+    <link rel="stylesheet" href="index.css">
+	<script>
+		function disalert() {
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var feedback = document.getElementById("feedback").value;
+			console.log(name, email, feedback);
+            alert("Thank you for your feedback "+name+" !");
+			window.close();
+		}
+	</script>
+</head>
+<header>
+    <br>
+    <center><font face="Comic sans MS" color="black">Creative - A place for different recipes</font></center>
+    <p align="center"><font size="5" face="Comic sans MS" color="black"><b>"A recipe has no soul. YOU as the cook must bring SOUL to the recipe."</b></font></p><br>
+</header>
+<body>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required placeholder=" Enter your name ">
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required placeholder=" Enter your email ">
+		<label for="feedback">Feedback:</label>
+		<textarea id="feedback" name="feedback" required></textarea>
+		<button onclick="disalert()">Submit</button>
+
+	</form>
+	<br><br>
+</body>
+<footer>
+	<p>&copy; 2023 Creative. All rights reserved.</p>
+  </footer>
+</html>

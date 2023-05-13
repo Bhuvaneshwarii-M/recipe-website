@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coconut Rice | Creative</title>
+        <link href="index.css" rel="stylesheet">
+        <script>
+            function generateCSV() {
+                var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+                var csvHead = 'Items\n';
+                var csvData = '';
+                checkboxes.forEach(function(checkbox) {
+                    var item = checkbox.getAttribute("value");
+                    csvData += item + "\n";
+                });
+                var blob = new Blob([csvHead, csvData], { type: "text;charset=utf-8" });
+                var url = URL.createObjectURL(blob);
+                var link = document.createElement("a");
+                link.href = url;
+                link.download = "buylist.txt";
+                link.click();
+            }
+        </script>
+    </head>
+    <header>
+        <br>
+        <center><font face="Comic sans MS" color="black">Creative - COCONUT RICE </font></center>
+        <p align="center"><font size="5" face="Comic sans MS" color="black"><b>"A recipe has no soul. YOU as the cook must bring SOUL to the recipe."</b></font></p><br>
+    </header>
+    <form>
+     <h3>Choose required Ingredients :</h3> <br>
+        <div style="display: block; text-align: center; font-size: large;">
+            <label>Pacc arici<input type="checkbox" value="Pacc arici"></label>
+            <label>Coconut<input type="checkbox" value="Coconut"></label>
+            <label>Urad dal<input type="checkbox" value="Urad dal"></label>
+            <label>Bengal gram dal<input type="checkbox" value="Bengal gram dal"></label>
+            <label>Cashew<input type="checkbox" value="Cashew"></label>
+            <label>Curry leaves<input type="checkbox" value="Curry leaves"></label>
+            <label>Oil<input type="checkbox" value="Oil"></label>
+            <label>Salt<input type="checkbox" value="Salt"></label>
+            <br><hr><br><center><button onclick="generateCSV()">Download</button></center>
+        </div>
+    </form>
+    <footer>
+        <p>&copy; 2023 Creative. All rights reserved.</p>
+    </footer>
+</html>
