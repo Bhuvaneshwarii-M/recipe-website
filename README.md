@@ -1,0 +1,1 @@
+This is a recipe website where users can discover, share, and explore a variety of recipes. Whether you're a cooking enthusiast or someone looking for meal ideas, this platform provides a user-friendly interface to make your culinary journey delightful.
